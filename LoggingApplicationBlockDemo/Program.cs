@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Practices.Unity;
 
 namespace LoggingApplicationBlockDemo
 {
@@ -10,6 +11,7 @@ namespace LoggingApplicationBlockDemo
     {
         static void Main(string[] args)
         {
+            var container = new UnityContainer();
         }
     }
 }
