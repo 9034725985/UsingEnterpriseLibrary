@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Unity;
 using Microsoft.Practices.EnterpriseLibrary.Logging;
-using Microsoft.Practices.EnterpriseLibrary.Logging.ExtraInformation;
 using Microsoft.Practices.Unity;
 
 namespace LoggingApplicationBlockDemo
@@ -38,30 +37,46 @@ namespace LoggingApplicationBlockDemo
             //logWriter.Write("Another UI Logging Message", "UI");
             //logWriter.Write("Data Logging Messager", "Data");
 
-            var logEntry = new LogEntry
-                {
-                    Message = "Detailed Message", Categories = new List<string> {"General"}
-                };
+            //var logEntry = new LogEntry
+            //    {
+            //        Message = "Detailed Message", Categories = new List<string> {"General"}
+            //    };
 
-            var extendedInfo = new Dictionary<string, object>();
+            //var extendedInfo = new Dictionary<string, object>();
 
-            var debugInfoProvider = new DebugInformationProvider();
-            debugInfoProvider.PopulateDictionary(extendedInfo);
+            //var debugInfoProvider = new DebugInformationProvider();
+            //debugInfoProvider.PopulateDictionary(extendedInfo);
 
-            var managedSecurity = new ManagedSecurityContextInformationProvider();
-            managedSecurity.PopulateDictionary(extendedInfo);
+            //var managedSecurity = new ManagedSecurityContextInformationProvider();
+            //managedSecurity.PopulateDictionary(extendedInfo);
 
-            var unmanagedSecurity = new UnmanagedSecurityContextInformationProvider();
-            unmanagedSecurity.PopulateDictionary(extendedInfo);
+            //var unmanagedSecurity = new UnmanagedSecurityContextInformationProvider();
+            //unmanagedSecurity.PopulateDictionary(extendedInfo);
 
-            var comInfo = new ComPlusInformationProvider();
-            comInfo.PopulateDictionary(extendedInfo);
+            //var comInfo = new ComPlusInformationProvider();
+            //comInfo.PopulateDictionary(extendedInfo);
 
-            extendedInfo.Add("My Custom Info", ".... INFO ....");
+            //extendedInfo.Add("My Custom Info", ".... INFO ....");
 
-            logEntry.ExtendedProperties = extendedInfo;
+            //logEntry.ExtendedProperties = extendedInfo;
 
-            logWriter.Write(logEntry);
+            //logWriter.Write(logEntry);
+
+            //var traceManager = container.Resolve<TraceManager>();
+            //using (traceManager.StartTrace("Tracing"))
+            //{
+            //    logWriter.Write("General Message", "General");
+            //    logWriter.Write("General Message", "Demo");
+            //    logWriter.Write("General Message", "Data");
+            //    logWriter.Write("General Message", "UI");
+            //}
+
+            logWriter.Write("General Message", "General");
+            logWriter.Write("Demo Message", "Demo");
+            logWriter.Write("Data Message", "Data");
+            logWriter.Write("UI Message", "UI");
+
+            Console.ReadKey();
         }
     }
 }
