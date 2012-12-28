@@ -22,17 +22,25 @@ namespace LoggingApplicationBlockDemo
             //logWriter.Write("I am Logging!", "Debug", 1, 3000, TraceEventType.Error, "Error Message");
 
 
-            var logEntry = new LogEntry
-                {
-                    Message = "Logging with LogEntry",
-                    Categories = new List<string> {"Debug", "UI"},
-                    Priority = 3,
-                    EventId = 3000,
-                    Title = "Log Title",
-                    Severity = TraceEventType.Warning
-                };
+            //var logEntry = new LogEntry
+            //    {
+            //        Message = "Logging with LogEntry",
+            //        Categories = new List<string> {"Debug", "UI"},
+            //        Priority = 3,
+            //        EventId = 3000,
+            //        Title = "Log Title",
+            //        Severity = TraceEventType.Warning
+            //    };
 
-            logWriter.Write(logEntry);
+            //logWriter.Write(logEntry);
+
+            //if (logWriter.IsLoggingEnabled())
+            //    logWriter.Write("Logging using filter", "Demo");
+
+            logWriter.Write("Demo Logging Message", "Demo");
+            logWriter.Write("UI Logging Message", "UI");
+            logWriter.Write("Another UI Logging Message", "UI");
+            logWriter.Write("Data Logging Messager", "Data");
 
         }
     }
