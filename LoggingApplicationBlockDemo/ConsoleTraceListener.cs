@@ -7,7 +7,7 @@ using Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners;
 namespace LoggingApplicationBlockDemo
 {
     [ConfigurationElementType(typeof (CustomTraceListenerData))]
-    class ConsoleTraceListener :CustomTraceListener
+    public class ConsoleTraceListener :CustomTraceListener
     {
         public override void TraceData(System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object data)
         {
