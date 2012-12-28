@@ -15,7 +15,7 @@ namespace ExceptionHandlingBlockDemo
             }
             catch (Exception exception)
             {
-                Console.WriteLine("Caught an applicationlevel exception");
+                Console.WriteLine("Caught an application level exception");
                 Console.WriteLine(exception.ToString());
                 Console.ReadKey();
             }    
