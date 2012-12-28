@@ -76,6 +76,9 @@ namespace LoggingApplicationBlockDemo
             logWriter.Write("Data Message", "Data");
             logWriter.Write("UI Message", "UI");
 
+
+            logWriter.Write("General Message password", "General");
+
             Console.ReadKey();
         }
     }
