@@ -27,7 +27,19 @@ namespace ExceptionHandlingBlockDemo
                 .AddNewExtension<EnterpriseLibraryCoreExtension>();
 
             var exceptionManager = container.Resolve<ExceptionManager>();
-            exceptionManager.Process(MyExceptionalCode, "Policy");
+            //exceptionManager.Process(MyExceptionalCode, "Policy");
+            try
+            {
+                MyExceptionalCode();
+            }
+            catch (Exception exception)
+            {
+                Exception newException;
+                var handleException = exceptionManager.HandleException(exception, "Policy", out newException);
+                if (handleException)
+                    throw newException;
+                Console.WriteLine("did not throw exception");
+            }
         }
 
         private static void MyExceptionalCode()
