@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>EnterpriseLibrary.Caching.Database</id>
+    <version>5.0.505.0</version>
+    <title>Enterprise Library 5.0 - Caching Application Block Database Backing Store</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://www.opensource.org/licenses/ms-pl</licenseUrl>
+    <projectUrl>http://msdn.microsoft.com/en-us/library/ff664582(PandP.50).aspx</projectUrl>
+    <iconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>The Enterprise Library Caching Database Backing Store lets developers store cached data in a database.</description>
+    <summary>The Enterprise Library Caching Database Backing Store lets developers store cached data in a database.</summary>
+    <tags>entlib Enterprise Library caching cache database data backing store LOB</tags>
+    <dependencies>
+      <dependency id="EnterpriseLibrary.Caching" version="5.0" />
+      <dependency id="EnterpriseLibrary.Data" version="5.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="mscorlib" targetFramework=".NETFramework3.5, .NETFramework4.0" />
+    </frameworkAssemblies>
+    <references>
+      <reference file="Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll" />
+    </references>
+  </metadata>
+</package>
