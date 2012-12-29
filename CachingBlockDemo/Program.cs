@@ -16,12 +16,12 @@ namespace CachingBlockDemo
 
             var cacheManager = container.Resolve<ICacheManager>();
 
-            cacheManager.Add("demo", "demo data");
+            //cacheManager.Add("demo", "demo data");
 
             var absoluteTime = new AbsoluteTime(TimeSpan.FromHours(5));
             var neverExpired = new NeverExpired();
-            var slidingTime = new SlidingTime(TimeSpan.FromSeconds(10));
-            cacheManager.Add("demo2", "another data", CacheItemPriority.NotRemovable, null, slidingTime);
+            var slidingTime = new SlidingTime(TimeSpan.FromSeconds(1000));
+            //cacheManager.Add("demo2", "another data", CacheItemPriority.NotRemovable, null, neverExpired);
 
             var data = cacheManager.GetData("demo");
             if (data != null) Console.WriteLine(data);
@@ -29,11 +29,11 @@ namespace CachingBlockDemo
             var data2 = cacheManager.GetData("demo2");
             if (data2 != null) Console.WriteLine(data2);
 
-            Thread.Sleep(20*1000);
+            //Thread.Sleep(20*1000);
 
-            data2 = cacheManager.GetData("demo2");
-            if (data2 != null) Console.WriteLine(data2);
-            else Console.WriteLine("data was gone");
+            //data2 = cacheManager.GetData("demo2");
+            //if (data2 != null) Console.WriteLine(data2);
+            //else Console.WriteLine("data was gone");
 
             Console.ReadKey();
         }
