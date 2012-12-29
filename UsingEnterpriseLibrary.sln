@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9D0D1A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandlingBlockDemo", "ExceptionHandlingBlockDemo\ExceptionHandlingBlockDemo.csproj", "{D9A3B462-BDFF-4788-B02B-6D49A183FAAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CachingBlockDemo", "CachingBlockDemo\CachingBlockDemo.csproj", "{BCA3551F-5F3D-489C-A44B-479E09D562E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{D9A3B462-BDFF-4788-B02B-6D49A183FAAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9A3B462-BDFF-4788-B02B-6D49A183FAAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9A3B462-BDFF-4788-B02B-6D49A183FAAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA3551F-5F3D-489C-A44B-479E09D562E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA3551F-5F3D-489C-A44B-479E09D562E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA3551F-5F3D-489C-A44B-479E09D562E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA3551F-5F3D-489C-A44B-479E09D562E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
