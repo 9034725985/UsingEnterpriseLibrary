@@ -21,6 +21,10 @@ namespace CachingBlockDemo
             //var slidingTime = new SlidingTime(TimeSpan.FromSeconds(1000));
             //cacheManager.Add("demo2", "another data", CacheItemPriority.NotRemovable, null, neverExpired);
 
+            //cacheManager.Remove("demo");
+            cacheManager.Flush();
+
+
             var data = cacheManager.GetData("demo");
             if (data != null) Console.WriteLine(data);
 
