@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Threading;
 using Microsoft.Practices.EnterpriseLibrary.Caching;
-using Microsoft.Practices.EnterpriseLibrary.Caching.Expirations;
 using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Unity;
 using Microsoft.Practices.Unity;
 
@@ -18,9 +16,9 @@ namespace CachingBlockDemo
 
             //cacheManager.Add("demo", "demo data");
 
-            var absoluteTime = new AbsoluteTime(TimeSpan.FromHours(5));
-            var neverExpired = new NeverExpired();
-            var slidingTime = new SlidingTime(TimeSpan.FromSeconds(1000));
+            //var absoluteTime = new AbsoluteTime(TimeSpan.FromHours(5));
+            //var neverExpired = new NeverExpired();
+            //var slidingTime = new SlidingTime(TimeSpan.FromSeconds(1000));
             //cacheManager.Add("demo2", "another data", CacheItemPriority.NotRemovable, null, neverExpired);
 
             var data = cacheManager.GetData("demo");

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>EnterpriseLibrary.Caching.Cryptography</id>
+    <version>5.0.505.0</version>
+    <title>Enterprise Library 5.0 - Caching Application Block Cryptography Provider</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://www.opensource.org/licenses/ms-pl</licenseUrl>
+    <projectUrl>http://msdn.microsoft.com/en-us/library/ff664753(PandP.50).aspx</projectUrl>
+    <iconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>The Enterprise Library Caching Cryptography Provider lets developers encrypt the data to be cached.</description>
+    <summary>The Enterprise Library Caching Cryptography Provider lets developers encrypt the data to be cached.</summary>
+    <tags>entlib Enterprise Library caching cache database crypto cryptography security LOB</tags>
+    <dependencies>
+      <dependency id="EnterpriseLibrary.Caching" version="5.0" />
+      <dependency id="EnterpriseLibrary.Security.Cryptography" version="5.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="mscorlib" targetFramework=".NETFramework3.5, .NETFramework4.0" />
+    </frameworkAssemblies>
+    <references>
+      <reference file="Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll" />
+    </references>
+  </metadata>
+</package>
